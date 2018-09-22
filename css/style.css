@@ -1,0 +1,115 @@
+input[type=text], input[type=email], input[type=number], input[type=dropdown], select, textfield{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+input[type="radio"] {
+  vertical-align: middle;
+}
+label, legend {
+  padding: 12px 12px 12px 0px;
+  display: inline-block;
+  color: goldenrod;
+}
+fieldset {
+  margin-bottom: 20px;
+  margin: auto;
+  min-width: 90%;
+  border: 1px solid goldenrod;
+  border-radius: 5px;
+}
+fieldset input {
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+textarea {
+  margin: 20px 0px 20px 0px;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.button-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  border-radius:5px;
+  background-color: #3F69AA;
+  padding: 20px;
+}
+.left-col {
+  float: left;
+  width: 25%;
+  margin-top: 5px;
+}
+.right-col {
+  float: right;
+  width: 75%;
+  margin-top: 5px;
+}
+.col-left-50 {
+  float: left;
+  width: 50%;
+}
+.col-right-50 {
+  float: right;
+  width: 50%;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#title {
+  text-align: center;
+}
+#description {
+  background-color: #BBB;
+  border-radius: 5px;
+  padding: 5px;
+  color: purple;
+  text-align: center;
+}
+#survey-form {
+}
+#name {
+  margin-bottom: 20px;
+}
+#email {
+  margin-bottom: 20px;
+}
+#number {
+  margin-bottom: 20px;
+}
+#dropdown {
+  margin-bottom: 20px;
+}
+#front-end, #back-end, #full-stack {
+  margin-bottom: 10px;
+}
+#submit {
+  background-color: goldenrod;
+  color: #3F69AA;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+#submit:hover {
+  background-color: gold;
+  color: black;
+  box-shadow: 3px 3px 5px #111;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+  .left-col, .right-col, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
