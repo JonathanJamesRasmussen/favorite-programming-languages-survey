@@ -40,7 +40,7 @@ textarea {
 
 .container {
   border-radius:5px;
-  background-color: #3F69AA;
+  background-color: #131E30;
   padding: 20px;
 }
 .left-col {
@@ -70,6 +70,7 @@ textarea {
   text-align: center;
 }
 #description {
+  font-size: 22px;
   background-color: #BBB;
   border-radius: 5px;
   padding: 5px;

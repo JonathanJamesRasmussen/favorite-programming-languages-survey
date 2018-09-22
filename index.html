@@ -15,85 +15,86 @@
 <body>
 
   <header>
-  <h1 id="title">Favorite Programming Languages Survey</h1>
-</header>
-<main>
-  <h2 id="description">Let us know your favorite way to program</h2>
- <div class="container">
-  <form id="survey-form">
-    <div class="row">
-      <div class="left-col"><label for="name" id="name-label">Name:</label></div>
-      <div class="right-col"><input type="text" name="name" id="name" placeholder="name"></div>
-    </div>
-    <div class="row">
-      <div class="left-col"><label for="email" id="email-label">Email:</label></div>
-    <div class="right-col"><input type="email" name="email" id="email" placeholder="example@website.com"></div>
-    </div>
-    <div class="row">
-    <div class="left-col"><label for="number" id="number-label">How many years have you been programming?</label></div>
-    <div class="right-col"><input type="number" name="number" id="number" min="0" max="100" placeholder="0"></div></div>
-    <div class="row"><div class="left-col"><label for="dropdown">What's your favorite programming language?</label></div>
-    <div class="right-col"><select id="dropdown">
-      <option value="javascript">JavaScript</option>
-      <option value="java">Java</option>
-      <otpion value="python">Python</option>
-      <option value="csharp">C#</option>
-      <option value="cpp">C++</option>
-      <option value="c">C</option>
-      <option value="visualbasic">Visual Basic</option>
-      <option value="other">Other</other>
-    </select>
+    <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <h1 id="title">Favorite Programming Languages Survey</h1>
+  </header>
+  <main>
+    <p id="description">Let us know your favorite way to program</p>
+   <div class="container">
+    <form id="survey-form">
+      <div class="row">
+        <div class="left-col"><label for="name" id="name-label">Name:</label></div>
+        <div class="right-col"><input type="text" name="name" id="name" placeholder="name" required></div>
       </div>
-    <fieldset>
-      <legend>What type of developer are you?</legend>
-      <div><label for="front-end">
-        <input type="radio" id="front-end" value="front-end" name="dev-type" />Front-end</label></div>
-      <div><label for="back-end">
-        <input type="radio" id="back-end" value="back-end" name="dev-type" />Back-end</label></div>
-      <div><label for="full-stack">
-        <input type="radio" id="full-stack" value="full-stack" name="dev-type" />Full-stack</label></div>
+      <div class="row">
+        <div class="left-col"><label for="email" id="email-label">Email:</label></div>
+      <div class="right-col"><input type="email" name="email" id="email" placeholder="example@website.com" required></div>
+      </div>
+      <div class="row">
+      <div class="left-col"><label for="number" id="number-label">How many years have you been programming?</label></div>
+      <div class="right-col"><input type="number" name="number" id="number" min="0" max="100" placeholder="0"></div></div>
+      <div class="row"><div class="left-col"><label for="dropdown">What's your favorite programming language?</label></div>
+      <div class="right-col"><select id="dropdown">
+        <option value="javascript">JavaScript</option>
+        <option value="java">Java</option>
+        <otpion value="python">Python</option>
+        <option value="csharp">C#</option>
+        <option value="cpp">C++</option>
+        <option value="c">C</option>
+        <option value="visualbasic">Visual Basic</option>
+        <option value="other">Other</other>
+      </select>
+        </div>
+      <fieldset>
+        <legend>What type of developer are you?</legend>
+        <div><label for="front-end">
+          <input type="radio" id="front-end" value="front-end" name="dev-type" />Front-end</label></div>
+        <div><label for="back-end">
+          <input type="radio" id="back-end" value="back-end" name="dev-type" />Back-end</label></div>
+        <div><label for="full-stack">
+          <input type="radio" id="full-stack" value="full-stack" name="dev-type" />Full-stack</label></div>
+      </fieldset>
+      <fieldset>
+        <legend>What IDEs and/or text editors do you use?</legend>
+        <div>
+          <input type="checkbox" id="atom" value="atom" name="editor" /><label for="atom">Atom</label>
+        </div>
+        <div>
+           <input type="checkbox" id="eclipse" value="eclipse" name="editor" /><label for="eclipse">Eclipse</label>
+        </div>
+        <div>
+          <input type="checkbox" id="emacs" value="emacs" name="editor" /><label for="emacs">Emacs</label>
+        </div>
+        <div>
+        <input type="checkbox" id="intellij" value="intellij" name="editor" /><label for="intellij">IntelliJ</label>
+        </div>
+        <div>
+          <input type="checkbox" id="notepadpp" value="notepadpp" name="editor" /><label for="notepadpp">Notepad ++</label></input>
+        </div>
+        <div>
+        <input type="checkbox" id="pycharm" value="pycharm" name="editor" /><label for="pycharm">PyCharm</label>
+        </div>
+        <div>
+          <input type="checkbox" id="sublime" value="sublime" name="editor" /><label for="sublime">Sublime</label>
+        </div>
+        <div>
+          <input type="checkbox" id="vim" value="vim" name="editor" /><label for="vim">Vim</label>
+        </div>
+        <div>
+          <input type="checkbox" id="vs" value="vs" name="editor" /><label for="vs">Visual Studio</label></div>
+        <div>
+          <input type="checkbox" id="vscode" value="vscode" name="editor" /><label for="vscode">Visual Studio Code</label></div>
+        <div>
+          <input type="checkbox" id="other" value="other" name="editor" /><label for="other">Other</label>
+        </div>
     </fieldset>
-    <fieldset>
-      <legend>What IDEs and/or text editors do you use?</legend>
-      <div>
-        <input type="checkbox" id="atom" value="atom" name="editor" /><label for="atom">Atom</label>
+     <textarea name="additional" id="additional" placeholder="If you have any additional technologies or information, enter it here." rows="10"></textarea>
+     <div class="button-div">
+     <button id="submit">Submit</button>
+     </div>
+    </form>
       </div>
-      <div>
-         <input type="checkbox" id="eclipse" value="eclipse" name="editor" /><label for="eclipse">Eclipse</label>
-      </div>
-      <div>
-        <input type="checkbox" id="emacs" value="emacs" name="editor" /><label for="emacs">Emacs</label>
-      </div>
-      <div>
-      <input type="checkbox" id="intellij" value="intellij" name="editor" /><label for="intellij">IntelliJ</label>
-      </div>
-      <div>
-        <input type="checkbox" id="notepadpp" value="notepadpp" name="editor" /><label for="notepadpp">Notepad ++</label></input>
-      </div>
-      <div>
-      <input type="checkbox" id="pycharm" value="pycharm" name="editor" /><label for="pycharm">PyCharm</label>
-      </div>
-      <div>
-        <input type="checkbox" id="sublime" value="sublime" name="editor" /><label for="sublime">Sublime</label>
-      </div>
-      <div>
-        <input type="checkbox" id="vim" value="vim" name="editor" /><label for="vim">Vim</label>
-      </div>
-      <div>
-        <input type="checkbox" id="vs" value="vs" name="editor" /><label for="vs">Visual Studio</label></div>
-      <div>
-        <input type="checkbox" id="vscode" value="vscode" name="editor" /><label for="vscode">Visual Studio Code</label></div>
-      <div>
-        <input type="checkbox" id="other" value="other" name="editor" /><label for="other">Other</label>
-      </div>
-  </fieldset>
-   <textarea name="additional" id="additional" placeholder="If you have any additional technologies or information, enter it here." rows="10"></textarea>
-   <div class="button-div">
-   <button id="submit">Submit</button>
-   </div>
-  </form>
-    </div>
-</main>
+  </main>
   
   
 
